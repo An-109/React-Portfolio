@@ -1,0 +1,25 @@
+.header1{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    gap: 30 px;
+    background-color: #A31621;
+    margin: 0;
+}
+.headerRouter{
+    left: 21px;
+    color: white; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+.headerName{
+    left: 21px;
+    color: white; 
+    text-align: left; 
+}
+
+.footerLocate{
+    bottom: 0;
+}
