@@ -1,25 +1,280 @@
-.header1{
-    position: absolute;
+
+.header1 {
+    position: fixed; 
     top: 0;
+    height: 120px;
+    right: 0; 
     width: 100%;
     display: flex;
-    gap: 30 px;
-    background-color: #A31621;
+    justify-content: flex-end; 
+    align-items: center; 
+    background-color:black;
     margin: 0;
+    padding: 10px 20px; 
+    z-index: 1000; 
 }
-.headerRouter{
-    left: 21px;
+.backGround{
+    background-color: #493548;
+}
+.headerRouter {
+   
     color: white; 
     display: flex;
-    justify-content: flex-end; 
-    align-items: center;
+    justify-content: flex-end;
+    align-items: center; 
+    padding: 0 20px;
 }
-.headerName{
-    left: 21px;
+.headerName {
     color: white; 
-    text-align: left; 
+   font-size: 30px;
+    text-align: left;
+    margin-right: auto; 
 }
 
-.footerLocate{
+.footerLocate {
+    position: fixed; 
     bottom: 0;
+    display: flex;
+    height: 120px; 
+    align-items: center;
+    justify-content: center; 
+    background-color: #493548;
+    width: 100%;
+}
+
+.footerImage {
+    width: 110px; 
+    height: 110px;
+    margin: 0;
+}
+
+.imgGeneral {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    align-items: center;
+    color: white;
+    margin: 0;
+    min-height: 500px;
+}
+
+.imgtitle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+.imgPort {
+    display: flex;
+    width: auto;
+    max-width: 400px;
+    height: auto;
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    z-index: 1;
+}
+
+.portfolioTitle {
+    position: absolute;
+    top: 130px;
+    left: 30px;
+    color: white;
+    font-size: 30px;
+}
+
+.hoverTitle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.imgtitle:hover .hoverTitle {
+    opacity: 1;
+}
+
+.titleText {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.githubLink {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.githubIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.githubLink:hover .githubIcon {
+    filter: brightness(1.2);
+}
+.inputBox{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    color: white;
+}
+
+.inputRest {
+    border: 2px solid white;
+    padding: 5px;
+    width: 300px;
+    margin-top: 5px;
+    display: block;
+    color: white;
+}
+.inputBoxName2 {
+    font-size: 20px;
+    margin-top: 5px;
+    padding-top: 120px;
+    bottom: 0;
+    color: white;
+}
+
+.inputBoxName {
+    font-size: 20px;
+    margin-top: 5px;
+    padding-top: 5px;
+    bottom: 0;
+}
+
+.inputMessage {
+    border: 2px solid white;
+    width: 300px;
+    height: 100px;
+    margin-top: 15px;
+    padding: 5px;
+}
+.submit{
+   
+    margin-top: 20px;
+    border: 2px solid white;
+    height: 50px;
+    width: 70px;
+}
+.textColor{
+    color: white;
+    margin-left: 110px ;
+    margin-top: 190px;
+    margin-bottom: 110px;
+}
+body {
+    background-color:#DB4C40;
+}
+
+
+/* Mobile devices */
+@media (min-width: 320px) and (max-width: 480px) {
+    .header1 {
+        position: fixed;
+        top: auto;
+        bottom: 120px;
+        width: 100%;
+        height: 20px;
+        background-color: #A31621;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        font-size: 10px;
+    }
+
+    .footerLocate {
+        background-color: #CCF5AC;
+    }
+
+    .footerImage {
+        width: 50px;
+        height: 50px;
+    }
+
+    .headerRouter {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headerName{
+        font-size: 15px;
+    }
+    .inputBoxName2{
+        padding-top: 2px;
+       
+    }
+    .imgPort{
+        width: auto;
+        height: auto;
+    
+    }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    .inputBoxName2{
+        padding-top: auto;
+        font-size: 15px;
+    }
+    .inputBoxName{
+        font-size: 15px;
+    }
+    .inputRest{
+        width: 100%;
+        height: 10%;
+    }
+    .inputMessage{
+        width: 100%;
+    }
+    
+}
+
+/* Desktops */
+@media (min-width: 769px) and (max-width: 1200px) {
+  
+}
+
+/* Large Desktops */
+@media (min-width: 1201px) {
+    .inputBoxName2{
+        padding-top: auto;
+        font-size: 30px;
+    }
+    .inputBoxName{
+        font-size: 30px;
+    }
+    .inputRest{
+        width: 100%;
+        height: 120px;
+    }
+    .inputMessage{
+        width: 100%;
+        height: 180px;
+    }
 }

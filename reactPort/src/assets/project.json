@@ -4,8 +4,8 @@
         "element": "Portfolio",
         "props": [
             {
-          "url": "https://github.com/yourusername/project2",
-          "imageSrc": "https://via.placeholder.com/150",
+          "url": "https://danr55.github.io/Indexd/",
+          "imageSrc": "/src/assets/index.png",
           "altText": "Project 2",
           "title": "Project 2"
         }

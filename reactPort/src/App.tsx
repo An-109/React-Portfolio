@@ -1,11 +1,14 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import FormFactor from './page/form.tsx'
+import FormFactor from './page/contact.tsx'
 import Resume from './page/resume.tsx';
 import AboutMe from './page/aboutMe.tsx';
 import routesData from './assets/project.json'
 import Header from './page/header.tsx';
-import React from 'react';
+
+import Fatter from './page/footer.tsx';
+import Portfolio from './page/portfolio.tsx'
+
 function App() {
 
   const [namE, setName] = useState(''); 
@@ -18,24 +21,20 @@ function App() {
       <Header/>
     
    <Routes>
-          
           <Route path="/" element={<AboutMe />} />
-          <Route path="/form" element={<FormFactor namE={namE} emaiL={emaiL} messagE={messagE} setEmail={setEmail} setMessage={setMessage} setName={setName} />} />
+          <Route path="/AboutMe" element={<AboutMe />} />
+          <Route path="/contact" element={<FormFactor namE={namE} emaiL={emaiL} messagE={messagE} setEmail={setEmail} setMessage={setMessage} setName={setName} />} />
           <Route path='/resume' element={<Resume />} ></Route>
-          {routesData.map((route, index) => {
-        
-          const Component = React.lazy(() => import(`./${route.element}`));
 
-          return (
-            <Route
-              key={index}
-              path={route.path}
-              element={<Component {...route.props} />}
-            />
-          );
-        })}
+          <Route
+          path="/portfolio"
+          element={<Portfolio items={routesData[0].props} />} 
+        />
       </Routes>
-      
+
+
+      <Fatter />
+       
     </BrowserRouter>
   );
 }
