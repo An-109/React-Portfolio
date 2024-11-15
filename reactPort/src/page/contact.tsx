@@ -22,7 +22,7 @@ interface FormFactorProps {
             <form className="inputBox " onSubmit={handleSubmit}>
                 
                     <label className="inputBoxName2" >Name:</label>
-                    <input type="text" onChange={(e) => setName(e.target.value)}  className="inputRest" > 
+                    <input type="text" onChange={(b) => setName(b.target.value)}  className="inputRest" > 
                         
                     </input>
                     <label className="inputBoxName">Email Address:</label>
