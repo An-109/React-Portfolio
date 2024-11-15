@@ -38,13 +38,19 @@
     height: 120px; 
     align-items: center;
     justify-content: center; 
-    background-color: #493548;
+    background-color: white;
     width: 100%;
 }
 
 .footerImage {
-    width: 110px; 
-    height: 110px;
+    width: 30px; 
+    height: 30px;
+    margin: 0;
+}
+
+.footerImage2 {
+    width: 50px; 
+    height: 50px;
     margin: 0;
 }
 
@@ -65,7 +71,7 @@
     justify-content: center;
     align-items: center;
     margin: 10px;
-    color: white;
+    color: black;
     font-size: 30px;
 }
 
@@ -84,7 +90,7 @@
     position: absolute;
     top: 130px;
     left: 30px;
-    color: white;
+    color: black;
     font-size: 30px;
 }
 
@@ -92,7 +98,7 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    color: white;
+    color: black;
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
@@ -143,19 +149,20 @@
 }
 
 .inputRest {
-    border: 2px solid white;
+    border: 2px solid black;
     padding: 5px;
-    width: 300px;
+    width: 200px;
     margin-top: 5px;
     display: block;
-    color: white;
+    color: black;
+    height: 50%;
 }
 .inputBoxName2 {
     font-size: 20px;
     margin-top: 5px;
     padding-top: 120px;
     bottom: 0;
-    color: white;
+    color: black;
 }
 
 .inputBoxName {
@@ -163,30 +170,33 @@
     margin-top: 5px;
     padding-top: 5px;
     bottom: 0;
+    color: black;
 }
 
 .inputMessage {
-    border: 2px solid white;
+    border: 2px solid black;
     width: 300px;
     height: 100px;
     margin-top: 15px;
     padding: 5px;
+    color: black;
 }
 .submit{
    
     margin-top: 20px;
-    border: 2px solid white;
+    border: 2px solid black;
     height: 50px;
     width: 70px;
+    color: black;
 }
 .textColor{
-    color: white;
+    color: black;
     margin-left: 110px ;
     margin-top: 190px;
     margin-bottom: 110px;
 }
 body {
-    background-color:#DB4C40;
+    background-color:white;
 }
 
 
@@ -198,7 +208,7 @@ body {
         bottom: 120px;
         width: 100%;
         height: 20px;
-        background-color: #A31621;
+        background-color: white;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -246,7 +256,7 @@ body {
         font-size: 15px;
     }
     .inputRest{
-        width: 100%;
+        width: 50%;
         height: 10%;
     }
     .inputMessage{
