@@ -5,7 +5,7 @@
         "props": [
             {
           "url": "https://danr55.github.io/Indexd/",
-          "imageSrc": "/src/assets/index.png",
+          "imageSrc": "./index.png",
           "altText": "Project 2",
           "title": "Project 2"
         }
