@@ -29,7 +29,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ items }) => {
         <span className="hoverTitle">
           <span className="titleText">{item.title}</span>
           <a href="https://github.com/An-109" target="_blank" rel="noopener noreferrer" className="githubLink">
-            <img src="./public/github-mark.png" alt="GitHub" className="githubIcon" />
+            <img src="./github-mark.png" alt="GitHub" className="githubIcon" />
           </a>
         </span>
       </div>

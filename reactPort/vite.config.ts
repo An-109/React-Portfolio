@@ -7,5 +7,10 @@ export default defineConfig({
   server:{
     port: 3000,
     open: true
+  },
+  build: {
+    
+    assetsDir: 'assets', // Specifies the folder for assets in the output
+    emptyOutDir: true // Cleans the output directory before building
   }
 })
