@@ -9,9 +9,7 @@ Show's a Portfolio about An Le.
 - [Usage](#usage)
 - [Features](#features)
 - [Contributing](#contributing)
-- [License](#license)
 - [Questions](#questions)
-- [Credits](#Credits)
 - [Tests](#tests)
 
 ## Installation
@@ -20,8 +18,6 @@ Copy the http or ssh key and clone it to your local drive. After that you can do
 ## Usage
 Showing my experience as well as being a personal Portfolio.
 
-## Credits
-N/A.
 
 
 ## Questions
